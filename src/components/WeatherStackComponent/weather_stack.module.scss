@@ -1,0 +1,24 @@
+@import "../../globalStyles/mixins.module";
+@import "../../globalStyles/variables.module";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.6);
+  @include wrapper;
+}
+
+.clouds {
+  background-image: $background-image-clouds;
+  @include backgroundPosition;
+}
+.clear {
+  background-image: $background-image-clear;
+  @include backgroundPosition;
+}
+.mist {
+  background-image: $background-image-mist;
+  @include backgroundPosition;
+}

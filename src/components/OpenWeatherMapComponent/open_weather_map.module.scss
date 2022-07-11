@@ -1,0 +1,43 @@
+@import "../../globalStyles/mixins.module";
+@import "../../globalStyles/variables.module";
+
+.wrapper {
+  @include wrapper;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clouds {
+  background-image: $background-image-clouds;
+  @include backgroundPosition;
+}
+.clear {
+  background-image: $background-image-clear;
+  @include backgroundPosition;
+}
+.mist {
+  background-image: $background-image-mist;
+  @include backgroundPosition;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 auto;
+}
+
+.city_name {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: bold;
+}

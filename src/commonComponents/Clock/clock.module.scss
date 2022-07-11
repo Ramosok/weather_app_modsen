@@ -1,0 +1,23 @@
+@import "../../globalStyles/mixins.module";
+
+.container {
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.time {
+  font-size: 2em;
+  @include fontStyle;
+}
+
+.format {
+  font-size: 1em;
+  @include fontStyle;
+}
+
+.date {
+  font-size: 1.125em;
+  @include fontStyle;
+}

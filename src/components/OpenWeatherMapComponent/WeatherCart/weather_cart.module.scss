@@ -1,0 +1,45 @@
+@import "../../../globalStyles/mixins.module";
+
+.clouds {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../static/icon/cloudy_icon.png");
+  @include backgroundPosition;
+}
+.clear {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../static/icon/sun-icon.png");
+  @include backgroundPosition;
+}
+.mist {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../static/icon/rain-icon.png");
+  @include backgroundPosition;
+}
+
+.day_container {
+  text-align: center;
+  margin: 0;
+  @include fontStyle;
+}
+
+.weather_block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include fontStyle;
+}
+
+.btn_hourly_block {
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.hourly_container {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
